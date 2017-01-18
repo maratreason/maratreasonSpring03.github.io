@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="restaurantBean" class="com.marat.sp.Restaurant">
+	<!-- <property name="welcomeNote" value="Welcome to our Restaurant!!!"/> -->
+	<constructor-arg ref="teaBean" />
+	</bean>
+	
+	<bean id="teaBean" class="com.marat.sp.Tea"></bean>
+
+</beans>
